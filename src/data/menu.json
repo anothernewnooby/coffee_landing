@@ -1,0 +1,61 @@
+{
+    "menu": [
+      {
+        "nombre": "Espresso",
+        "ingredientes": ["Café molido"],
+        "sabor": "Intenso y fuerte",
+        "precio": 1.50,
+        "descripcion": "Un concentrado de café puro, servido en una pequeña porción, con un sabor robusto y lleno de cafeína."
+      },
+      {
+        "nombre": "Cappuccino",
+        "ingredientes": ["Café espresso", "Leche vaporizada", "Espuma de leche"],
+        "sabor": "Cremoso y equilibrado",
+        "precio": 2.50,
+        "descripcion": "Una combinación equilibrada de espresso, leche vaporizada y una generosa capa de espuma de leche."
+      },
+      {
+        "nombre": "Latte",
+        "ingredientes": ["Café espresso", "Leche vaporizada"],
+        "sabor": "Suave y cremoso",
+        "precio": 2.80,
+        "descripcion": "Un café suave y cremoso con una proporción mayor de leche, ideal para quienes prefieren un sabor más suave."
+      },
+      {
+        "nombre": "Americano",
+        "ingredientes": ["Café espresso", "Agua caliente"],
+        "sabor": "Ligero y suave",
+        "precio": 2.00,
+        "descripcion": "Un espresso aligerado con agua caliente, ofreciendo un sabor menos concentrado que el espresso, pero igual de sabroso."
+      },
+      {
+        "nombre": "Lágrima",
+        "ingredientes": ["Leche vaporizada", "Un toque de café espresso"],
+        "sabor": "Sutil y cremoso",
+        "precio": 2.00,
+        "descripcion": "Principalmente leche vaporizada con un toque de espresso, para un sabor sutil y una textura suave."
+      },
+      {
+        "nombre": "Chai Latte",
+        "ingredientes": ["Té negro", "Leche vaporizada", "Mezcla de especias (canela, jengibre, cardamomo, clavo)"],
+        "sabor": "Especiado y suave",
+        "precio": 3.00,
+        "descripcion": "Una mezcla reconfortante de té negro, leche y especias aromáticas, perfecto para un sabor cálido y especiado."
+      },
+      {
+        "nombre": "Matcha Latte",
+        "ingredientes": ["Polvo de té verde matcha", "Leche vaporizada", "Miel (opcional)"],
+        "sabor": "Terroso y cremoso",
+        "precio": 3.50,
+        "descripcion": "Un latte vibrante y energizante hecho con matcha en polvo y leche, ideal para quienes buscan un sabor suave y refrescante."
+      },
+      {
+        "nombre": "Golden Milk",
+        "ingredientes": ["Leche vegetal o de vaca", "Cúrcuma", "Jengibre", "Canela", "Pimienta negra", "Miel (opcional)"],
+        "sabor": "Dulce y especiado",
+        "precio": 3.00,
+        "descripcion": "Una bebida de leche dorada con cúrcuma y especias, conocida por sus propiedades antiinflamatorias y su sabor cálido y suave."
+      }
+    ]
+  }
+  

@@ -4,7 +4,9 @@ import header from "../components/css/header.module.css";
 
 <header class={header.header}>
     <div>
-        <h1 class={header.logo}>Tierra Café</h1>
+        <a href="/">
+            <h1 class={header.logo}>Tierra Café</h1>
+        </a>
         
         <label class={header.hamburger}>
             <input type="checkbox" id="menuToggle" />
@@ -18,7 +20,7 @@ import header from "../components/css/header.module.css";
         </label>
         <nav class={header.nav} id="nav" data-visible="false">
             <ul class={header.navlist}>
-                <li><a href="#">Menú</a></li>
+                <li><a href="/menu">Menú</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Ubicación</a></li>
                 <li><a href="#">Contacto</a></li>

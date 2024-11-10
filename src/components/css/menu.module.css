@@ -1,0 +1,47 @@
+.contenedor{
+    padding: 5rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    gap: 8px;
+}
+
+.section > div > h2{
+    font-family: var(--fontSecondary);
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+.section > div > input {
+    width: 100%;
+    height: 4rem;
+    border-radius: 1.25rem;
+    background-color: #131820;
+    border: none;
+    padding-left: 2rem;
+    font-family: var(--fontSecondary);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--textColor);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.section li{
+    width: 100%;
+    height: 3rem;
+    list-style: none;
+    color: var(--textColor);
+    font-family: var(--fontSecondary);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 0.25rem;
+    margin-bottom: 3rem;
+}
+
+.section li:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: 0.3s ease-out;
+}

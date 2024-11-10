@@ -49,6 +49,11 @@
     margin: 0 auto  ;
 }
 
+.section > div > img{
+    width: 45rem;
+    height: auto;
+}
+
 .separador{
     background-color: var(--secondary);
     width: 15rem;
@@ -127,4 +132,10 @@
     100% {
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 600px) {
+  .section > div > img{
+    width: 30rem;
+  }
 }
