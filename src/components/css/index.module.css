@@ -1,0 +1,130 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: calc(100dvh - 7rem);  
+    overflow: hidden;
+    z-index: 1;
+}
+
+.img {
+    width: 100%;
+    height: calc(100dvh - 7rem); 
+    object-fit: cover;
+}
+
+.section > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el div ocupe todo el ancho */
+    height: 100%; /* Asegura que el div ocupe todo el alto */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    flex-direction: column;
+    color: var(--textColor); /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para el texto, mejora la legibilidad */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+}
+
+.section > div > h1{
+    font-family: var(--fontPrimary);
+    font-size: 7rem;
+    font-weight: 900;
+    color: var(--textColor);
+    margin: 0 auto;
+}
+
+.section > div > h2{
+    font-family: var(--fontSecondary);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--textColor);
+    text-align: center;
+    margin: 0 auto  ;
+}
+
+.separador{
+    background-color: var(--secondary);
+    width: 15rem;
+    height: 0.25rem;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.button{
+    width: 13rem;
+    height: 4rem;
+    font-family: var(--fontSecondary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--secondary);
+    color: var(--textColor);
+}
+
+.button:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: 0.5s ease-in-out;
+}
+
+/* *animaciones* */
+
+.section::after {
+    content: "";
+    position: absolute;
+    left: -100%; /* Comenzamos fuera de la vista a la izquierda */
+    top: -100%; /* Comenzamos fuera de la vista arriba */
+    background-color: var(--secondary);
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+    transform-origin: top left; /* Punto de origen de la transformación */
+    animation: sectionLoad 1s ease-in-out forwards;
+}
+
+/* Animación para el texto/contenido */
+.section {
+    color: var(--textColor);
+    animation: textAppear 1s ease-in-out forwards;
+}
+
+/* Definimos la animación del fondo */
+@keyframes sectionLoad {
+    0% {
+        visibility: visible;
+        transform: scale(0);
+        left: 0;
+        top: 0;
+    }
+    100% {
+        visibility: visible;
+        transform: scale(100);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Definimos la animación del texto */
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

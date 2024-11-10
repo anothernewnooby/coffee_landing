@@ -1,10 +1,11 @@
 :root {
   --primary: #0c0f14;
-  --secondary: #d17842;
+  --secondary: #ff8b44;
   --terciario: #220d01;
   --textColor: #fffbeb;
   --offTextColor: #55585d;
   --navbar:#242424;
+  --accentColor: #4fd1c5;
   --fontPrimary:"Arizonia", cursive;
   --fontSecondary: "Outfit", sans-serif;
 }

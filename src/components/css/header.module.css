@@ -1,6 +1,7 @@
 /* header.module.css */
 .header {
     background-color: var(--terciario);
+    height: 7rem;
 }
 
 .header > div {
@@ -111,6 +112,7 @@
     .header > div {
         height: 7rem;
         padding: 1rem;
+        z-index: 10000;
     }
 
     .logo {

@@ -1,8 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import index from "../components/css/index.module.css";
 ---
 
 <Layout title="Welcome to Astro.">
-	
+    <section class={index.section}>
+        <img class={index.img} src="/affasdf.jpg" alt="imagen café">
+        <div>
+            <h1>Tierra Cafe</h1>
+            <div class={index.separador}></div>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>  Non natus rerum unde iusto voluptatum ducimus cum eos reprehenderit tenetur illo?</h2>
+            <button class={index.button}>Nuestro menú</button>
+        </div>
+    </section>
 </Layout>
 
