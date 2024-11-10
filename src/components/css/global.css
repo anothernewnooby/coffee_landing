@@ -1,0 +1,25 @@
+:root {
+  --primary: #0c0f14;
+  --secondary: #d17842;
+  --textColor: #fffbeb;
+  --offTextColor: #55585d;
+  --navbar:#242424;
+  --fontPrimary:"Arizonia", cursive;
+  --fontSecondary: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+  font-size: 62.5%;
+}
+
+body {
+    background-color: var(--primary);
+}
+

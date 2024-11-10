@@ -1,0 +1,38 @@
+---
+import header from "../components/css/header.module.css";
+---
+
+<header class={header.header}>
+    <div>
+        <h1 class={header.logo}>Tierra Café</h1>
+        
+        <label class={header.hamburger}>
+            <input type="checkbox" id="menuToggle" />
+            <svg viewBox="0 0 32 32">
+                <path
+                class={`${header.line} ${header['line-top-bottom']}`}
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                ></path>
+                <path class={header.line} d="M7 16 27 16"></path>
+            </svg>
+        </label>
+        <nav class={header.nav} id="nav" data-visible="false">
+            <ul class={header.navlist}>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>    
+    </div>
+</header>
+
+<script>
+    const nav = document.querySelector("#nav");
+    const menuToggle = document.querySelector("#menuToggle");
+
+    menuToggle?.addEventListener("change", (e) => {
+        const isChecked = (e.target as HTMLInputElement).checked;
+        nav?.setAttribute('data-visible', isChecked.toString());
+    });
+</script>
