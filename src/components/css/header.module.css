@@ -30,7 +30,7 @@
     font-family: var(--fontSecondary);
     font-size: 2rem;
     text-decoration: none;
-    color: #1c1c1c;
+    color: var(--fontPrimary);
 }
 
 /* Estilos del botón hamburguesa */
