@@ -3,14 +3,15 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 3fr;
-    gap: 8px;
+    gap: 10rem;
 }
 
-.section > div > h2{
+.section > div > h1{
     font-family: var(--fontSecondary);
     font-size: 3rem;
     font-weight: 600;
     color: var(--textColor);
+    text-align: center;
 }
 
 .section > div > input {
@@ -44,4 +45,108 @@
     background-color: var(--secondary);
     color: var(--primary);
     transition: 0.3s ease-out;
+    padding-left: 2rem;
+}
+
+.cartasContenedor{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+    padding: 2rem;
+}
+
+.carta{
+    width: 20rem;
+    height: 20rem;
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .section > div {
+        width: 90%; /* Deja un pequeño margen a los lados */
+        margin: 0 auto; /* Centra el div */
+    }
+
+    .section > div > h1 {
+        font-size: 3.5rem; /* Reduce un poco el tamaño del título */
+        margin: 1rem 0;
+    }
+
+    .section > div > input {
+        width: 100%;
+        font-size: 1.6rem; /* Reduce un poco el tamaño del texto */
+        margin: 5rem 0;
+
+    }
+
+    .menu{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .section ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .section ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section li {
+        width: auto;
+        margin-bottom: 0;
+        padding: 0.5rem 1rem;
+        flex-shrink: 0;
+        font-size: 1.6rem; /* Reduce el tamaño del texto */
+    }
+
+    .section li:hover {
+        padding-left: 1rem;
+    }
+
+    .cartasContenedor{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        margin-top: -5rem;
+    }
+    
+    .carta{
+        width: 20rem;
+        height: 20rem;
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .carta{
+        width: 30rem;
+        height: 30rem;
+        background-color: red;
+    }
 }

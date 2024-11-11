@@ -1,30 +1,37 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 import menu from "../components/css/menu.module.css";
 ---
 
 <Layout title="Menu">
-    <section class={menu.contenedor}>
-        <section class={menu.section}>
-            <div>
-                <h2>Encuentra el mejor café para ti</h2>
-                <input type="text" placeholder="Encuentra Tu Combinación">
-            </div>
-            <div>
-                <ul>
-                    <li>Bebidas Calientes</li>
-                    <li>Bebidas Frías</li>
-                    <li>Repostería</li>
-                    <li>Sándwiches Gourmet</li>
-                    <li>Sin Gluten</li>
-                    <li>Sin Azúcar</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-
-        </section>
+  <section class={menu.contenedor}>
+    <section class={menu.section}>
+      <div class={menu.divtitulo}>
+        <h1>Encuentra el mejor café para ti</h2>
+        <input type="text" placeholder="Encuentra Tu Combinación" />
+      </div>
+      <div class={menu.menu}>
+        <ul>
+          <li>Bebidas Calientes</li>
+          <li>Bebidas Frías</li>
+          <li>Repostería</li>
+          <li>Sándwiches Gourmet</li>
+          <li>Sin Gluten</li>
+          <li>Sin Azúcar</li>
+        </ul>
+      </div>
     </section>
-    
+
+    <section class={menu.cartasContenedor}>
+        <div class={menu.carta}>1</div>
+        <div class={menu.carta}>2</div>
+        <div class={menu.carta}>3</div>
+        <div class={menu.carta}>4</div>
+        <div class={menu.carta}>5</div>
+        <div class={menu.carta}>6</div>
+        <div class={menu.carta}>7</div>
+        <div class={menu.carta}>8</div>
+        <div class={menu.carta}>9</div>
+    </section>
+  </section>
 </Layout>
