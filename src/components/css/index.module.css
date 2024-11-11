@@ -134,7 +134,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .section > div > img{
     width: 30rem;
   }

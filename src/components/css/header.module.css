@@ -114,6 +114,7 @@
 
 @media (max-width: 600px) {
     .header > div {
+        width: 100%;
         height: 7rem;
         padding: 1rem;
         z-index: 10000;

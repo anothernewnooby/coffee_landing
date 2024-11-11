@@ -1,12 +1,18 @@
-.contenedor{
+/* Contenedor principal */
+.contenedor {
     padding: 5rem;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 3fr;
     gap: 10rem;
+    position: relative; /* Contiene el pseudo-elemento */
+    color: var(--textColor);
+    animation: textAppear 1s ease-in-out forwards;
+    overflow: hidden; /* Evita el scroll */
 }
 
-.section > div > h1{
+/* Título de la sección */
+.section > div > h1 {
     font-family: var(--fontSecondary);
     font-size: 3rem;
     font-weight: 600;
@@ -14,6 +20,7 @@
     text-align: center;
 }
 
+/* Estilo del campo de entrada */
 .section > div > input {
     width: 100%;
     height: 4rem;
@@ -29,7 +36,8 @@
     margin-bottom: 5rem;
 }
 
-.section li{
+/* Estilo de los elementos de lista */
+.section li {
     width: 100%;
     height: 3rem;
     list-style: none;
@@ -41,14 +49,16 @@
     margin-bottom: 3rem;
 }
 
-.section li:hover{
+/* Efecto hover en los elementos de lista */
+.section li:hover {
     background-color: var(--secondary);
     color: var(--primary);
     transition: 0.3s ease-out;
     padding-left: 2rem;
 }
 
-.cartasContenedor{
+/* Contenedor de cartas */
+.cartasContenedor {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -56,14 +66,60 @@
     padding: 2rem;
 }
 
-.carta{
+/* Carta individual */
+.carta {
     width: 20rem;
     height: 20rem;
-    background-color: red;
+    background-color: #131820;
 }
 
+/* Animaciones */
+.contenedor::after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+    transform-origin: top left;
+    animation: sectionLoad 1s ease-in-out forwards;
+}
+
+/* Animación de carga de la sección */
+@keyframes sectionLoad {
+    0% {
+        visibility: visible;
+        transform: scale(0);
+        left: 0;
+        top: 0;
+    }
+    100% {
+        visibility: visible;
+        transform: scale(100);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Animación de aparición del texto */
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilos responsive para pantallas de hasta 768px */
 @media screen and (max-width: 768px) {
-    .contenedor{
+    .contenedor {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,18 +138,17 @@
     }
 
     .section > div > h1 {
-        font-size: 3.5rem; /* Reduce un poco el tamaño del título */
+        font-size: 3.5rem;
         margin: 1rem 0;
     }
 
     .section > div > input {
         width: 100%;
-        font-size: 1.6rem; /* Reduce un poco el tamaño del texto */
+        font-size: 1.6rem;
         margin: 5rem 0;
-
     }
 
-    .menu{
+    .menu {
         width: 100%;
         overflow: hidden;
     }
@@ -120,14 +175,17 @@
         margin-bottom: 0;
         padding: 0.5rem 1rem;
         flex-shrink: 0;
-        font-size: 1.6rem; /* Reduce el tamaño del texto */
+        font-size: 1.6rem;
+        color: var(--offTextColor);
     }
 
     .section li:hover {
         padding-left: 1rem;
+        background-color: var(--primary);
+        color: var(--secondary);
     }
 
-    .cartasContenedor{
+    .cartasContenedor {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -135,18 +193,19 @@
         padding: 2rem;
         margin-top: -5rem;
     }
-    
-    .carta{
-        width: 20rem;
-        height: 20rem;
-        background-color: red;
+
+    .carta {
+        width: 18rem;
+        height: 18rem;
+        
     }
 }
 
+/* Estilos para pantallas grandes (mínimo 1439px) */
 @media screen and (min-width: 1439px) {
-    .carta{
+    .carta {
         width: 30rem;
         height: 30rem;
-        background-color: red;
+        
     }
 }
