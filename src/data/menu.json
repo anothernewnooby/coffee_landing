@@ -1,11 +1,11 @@
 {
-  "menu": [
+  "Bebidas_Calientes": [
     {
       "id": 1,
       "nombre": "Espresso",
       "ingredientes": ["Café molido"],
       "sabor": "Intenso y fuerte",
-      "precio": 1.50,
+      "precio": 1.5,
       "descripcion": "Un concentrado de café puro, servido en una pequeña porción, con un sabor robusto y lleno de cafeína.",
       "image": "1"
     },
@@ -14,7 +14,7 @@
       "nombre": "Cappuccino",
       "ingredientes": ["Café espresso", "Leche vaporizada", "Espuma de leche"],
       "sabor": "Cremoso y equilibrado",
-      "precio": 2.50,
+      "precio": 2.5,
       "descripcion": "Una combinación equilibrada de espresso, leche vaporizada y una generosa capa de espuma de leche.",
       "image": "2"
     },
@@ -23,7 +23,7 @@
       "nombre": "Latte",
       "ingredientes": ["Café espresso", "Leche vaporizada"],
       "sabor": "Suave y cremoso",
-      "precio": 2.80,
+      "precio": 2.8,
       "descripcion": "Un café suave y cremoso con una proporción mayor de leche, ideal para quienes prefieren un sabor más suave.",
       "image": "3"
     },
@@ -32,7 +32,7 @@
       "nombre": "Americano",
       "ingredientes": ["Café espresso", "Agua caliente"],
       "sabor": "Ligero y suave",
-      "precio": 2.00,
+      "precio": 2.0,
       "descripcion": "Un espresso aligerado con agua caliente, ofreciendo un sabor menos concentrado que el espresso, pero igual de sabroso.",
       "image": "4"
     },
@@ -41,36 +41,378 @@
       "nombre": "Lágrima",
       "ingredientes": ["Leche vaporizada", "Un toque de café espresso"],
       "sabor": "Sutil y cremoso",
-      "precio": 2.00,
+      "precio": 2.0,
       "descripcion": "Principalmente leche vaporizada con un toque de espresso, para un sabor sutil y una textura suave.",
       "image": "5"
     },
     {
       "id": 6,
       "nombre": "Chai Latte",
-      "ingredientes": ["Té negro", "Leche vaporizada", "Mezcla de especias (canela, jengibre, cardamomo, clavo)"],
+      "ingredientes": [
+        "Té negro",
+        "Leche vaporizada",
+        "Mezcla de especias (canela, jengibre, cardamomo, clavo)"
+      ],
       "sabor": "Especiado y suave",
-      "precio": 3.00,
+      "precio": 3.0,
       "descripcion": "Una mezcla reconfortante de té negro, leche y especias aromáticas, perfecto para un sabor cálido y especiado.",
       "image": "6"
     },
     {
       "id": 7,
       "nombre": "Matcha Latte",
-      "ingredientes": ["Polvo de té verde matcha", "Leche vaporizada", "Miel (opcional)"],
+      "ingredientes": [
+        "Polvo de té verde matcha",
+        "Leche vaporizada",
+        "Miel (opcional)"
+      ],
       "sabor": "Terroso y cremoso",
-      "precio": 3.50,
+      "precio": 3.5,
       "descripcion": "Un latte vibrante y energizante hecho con matcha en polvo y leche, ideal para quienes buscan un sabor suave y refrescante.",
       "image": "7"
     },
     {
       "id": 8,
       "nombre": "Golden Milk",
-      "ingredientes": ["Leche vegetal o de vaca", "Cúrcuma", "Jengibre", "Canela", "Pimienta negra", "Miel (opcional)"],
+      "ingredientes": [
+        "Leche vegetal o de vaca",
+        "Cúrcuma",
+        "Jengibre",
+        "Canela",
+        "Pimienta negra",
+        "Miel (opcional)"
+      ],
       "sabor": "Dulce y especiado",
-      "precio": 3.00,
+      "precio": 3.0,
       "descripcion": "Una bebida de leche dorada con cúrcuma y especias, conocida por sus propiedades antiinflamatorias y su sabor cálido y suave.",
       "image": "8"
     }
+  ],
+
+  "reposteria": [
+    {
+      "id": 9,
+      "nombre": "Tarta de Manzana",
+      "ingredientes": ["Manzana", "Harina", "Azúcar", "Mantequilla", "Canela"],
+      "sabor": "Dulce y afrutado",
+      "precio": 3.5,
+      "descripcion": "Una deliciosa tarta con relleno de manzana fresca y un toque de canela.",
+      "image": "9"
+    },
+    {
+      "id": 10,
+      "nombre": "Cheesecake",
+      "ingredientes": [
+        "Queso crema",
+        "Galletas",
+        "Azúcar",
+        "Huevos",
+        "Mantequilla"
+      ],
+      "sabor": "Cremoso y suave",
+      "precio": 4.0,
+      "descripcion": "Un clásico cheesecake cremoso sobre una base de galleta crocante.",
+      "image": "10"
+    },
+    {
+      "id": 11,
+      "nombre": "Carrot Cake",
+      "ingredientes": [
+        "Zanahoria",
+        "Harina",
+        "Azúcar",
+        "Canela",
+        "Nueces",
+        "Queso crema"
+      ],
+      "sabor": "Dulce y especiado",
+      "precio": 3.8,
+      "descripcion": "Pastel húmedo de zanahoria con un glaseado de queso crema.",
+      "image": "11"
+    },
+    {
+      "id": 12,
+      "nombre": "Galletas de Avena",
+      "ingredientes": [
+        "Avena",
+        "Harina",
+        "Azúcar moreno",
+        "Mantequilla",
+        "Pasas"
+      ],
+      "sabor": "Dulce y crujiente",
+      "precio": 1.2,
+      "descripcion": "Galletas crujientes y saludables con avena y pasas.",
+      "image": "12"
+    },
+    {
+      "id": 13,
+      "nombre": "Galletas de Chocolate",
+      "ingredientes": [
+        "Harina",
+        "Chocolate",
+        "Azúcar",
+        "Mantequilla",
+        "Huevos"
+      ],
+      "sabor": "Dulce y achocolatado",
+      "precio": 1.5,
+      "descripcion": "Galletas suaves con trozos de chocolate en cada bocado.",
+      "image": "13"
+    },
+    {
+      "id": 14,
+      "nombre": "Muffins de Frutos Rojos",
+      "ingredientes": [
+        "Harina",
+        "Azúcar",
+        "Frutos rojos",
+        "Mantequilla",
+        "Huevos"
+      ],
+      "sabor": "Dulce y afrutado",
+      "precio": 2.5,
+      "descripcion": "Muffins esponjosos con una mezcla de frutos rojos frescos.",
+      "image": "14"
+    }
+  ],
+
+  "bebidas_frias": [
+    {
+      "id": 15,
+      "nombre": "Limonada con Menta",
+      "descripcion": "Una limonada clásica con un toque de menta fresca; refrescante y perfecta para los días calurosos.",
+      "ingredientes": ["Limón", "Menta fresca", "Agua", "Azúcar"],
+      "precio": 2.5,
+      "sabor": "Refrescante y cítrico",
+      "image": "15"
+    },
+    {
+      "id": 16,
+      "nombre": "Licuado de Fresa y Mango",
+      "descripcion": "Un batido cremoso y dulce con fresas frescas, plátano y leche (opciones: leche de almendra o avena).",
+      "ingredientes": [
+        "Fresas",
+        "Plátano",
+        "Leche (opcional: almendra, avena)"
+      ],
+      "precio": 3.0,
+      "sabor": "Dulce y cremoso",
+      "image": "16"
+    },
+    {
+      "id": 17,
+      "nombre": "Jugo Verde Detox",
+      "descripcion": "Una mezcla saludable de espinaca, apio, pepino, manzana verde y limón; ideal para los clientes que buscan algo saludable.",
+      "ingredientes": ["Espinaca", "Apio", "Pepino", "Manzana verde", "Limón"],
+      "precio": 3.2,
+      "sabor": "Fresco y saludable",
+      "image": "17"
+    },
+    {
+      "id": 18,
+      "nombre": "Smoothie Tropical",
+      "descripcion": "Una combinación de mango, piña y coco, que recuerda a los sabores del trópico; puedes ofrecerlo con agua de coco para un toque especial.",
+      "ingredientes": ["Mango", "Piña", "Coco", "Agua de coco (opcional)"],
+      "precio": 3.5,
+      "sabor": "Dulce y tropical",
+      "image": "18"
+    },
+    {
+      "id": 19,
+      "nombre": "Limonada de Coco",
+      "descripcion": "Limonada cremosa hecha con agua de coco y leche de coco, con un toque de limón; dulce, refrescante y exótico.",
+      "ingredientes": ["Agua de coco", "Leche de coco", "Limón"],
+      "precio": 3.3,
+      "sabor": "Dulce y refrescante",
+      "image": "19"
+    },
+    {
+      "id": 20,
+      "nombre": "Zumo de Naranja y Zanahoria",
+      "descripcion": "Un jugo natural lleno de vitamina C y antioxidantes, con un sabor ligeramente dulce y cítrico.",
+      "ingredientes": ["Naranja", "Zanahoria"],
+      "precio": 2.8,
+      "sabor": "Dulce y cítrico",
+      "image": "20"
+    },
+    {
+      "id": 21,
+      "nombre": "Smoothie de Frutas del Bosque",
+      "descripcion": "Un licuado vibrante hecho con frutos rojos (fresas, arándanos, frambuesas) y yogurt o leche vegetal, ideal para los amantes de las frutas.",
+      "ingredientes": [
+        "Fresas",
+        "Arándanos",
+        "Frambuesas",
+        "Yogurt o leche vegetal"
+      ],
+      "precio": 3.6,
+      "sabor": "Dulce y afrutado",
+      "image": "21"
+    }
+  ],
+
+  "sandwiches": [
+    {
+      "id": 22,
+      "nombre": "Sándwich Caprese",
+      "descripcion": "Con mozzarella fresca, rodajas de tomate, albahaca y un toque de pesto, servido en pan ciabatta o focaccia ligeramente tostado.",
+      "ingredientes": [
+        "Mozzarella fresca",
+        "Tomate",
+        "Albahaca",
+        "Pesto",
+        "Pan ciabatta o focaccia"
+      ],
+      "precio": 4.0,
+      "sabor": "Fresco y suave",
+      "image": "22"
+    },
+    {
+      "id": 23,
+      "nombre": "Sándwich de Pollo al Pesto",
+      "descripcion": "Pechuga de pollo a la parrilla, pesto de albahaca, queso provolone, espinacas frescas y tomates secos, en pan artesanal.",
+      "ingredientes": [
+        "Pechuga de pollo",
+        "Pesto de albahaca",
+        "Queso provolone",
+        "Espinacas frescas",
+        "Tomates secos",
+        "Pan artesanal"
+      ],
+      "precio": 5.5,
+      "sabor": "Intenso y cremoso",
+      "image": "23"
+    },
+    {
+      "id": 24,
+      "nombre": "Sándwich de Roast Beef y Queso Brie",
+      "descripcion": "Finas lonchas de roast beef, queso brie fundido, rúcula y cebolla caramelizada, en pan de centeno o de masa madre.",
+      "ingredientes": [
+        "Roast beef",
+        "Queso brie",
+        "Rúcula",
+        "Cebolla caramelizada",
+        "Pan de centeno o masa madre"
+      ],
+      "precio": 6.0,
+      "sabor": "Salado y ahumado",
+      "image": "24"
+    },
+    {
+      "id": 25,
+      "nombre": "Sándwich Vegetariano Mediterráneo",
+      "descripcion": "Hummus, rodajas de pepino, pimientos asados, espinacas y aceitunas, servido en pan integral o pita.",
+      "ingredientes": [
+        "Hummus",
+        "Pepino",
+        "Pimientos asados",
+        "Espinacas",
+        "Aceitunas",
+        "Pan integral o pita"
+      ],
+      "precio": 4.5,
+      "sabor": "Fresco y mediterráneo",
+      "image": "25"
+    },
+    {
+      "id": 26,
+      "nombre": "Sándwich de Jamón Serrano y Queso Manchego",
+      "descripcion": "Jamón serrano, queso manchego, rúcula y un toque de tomate triturado con aceite de oliva, en pan baguette.",
+      "ingredientes": [
+        "Jamón serrano",
+        "Queso manchego",
+        "Rúcula",
+        "Tomate triturado",
+        "Aceite de oliva",
+        "Pan baguette"
+      ],
+      "precio": 5.0,
+      "sabor": "Intenso y mediterráneo",
+      "image": "26"
+    },
+    {
+      "id": 27,
+      "nombre": "Sándwich de Atún y Aguacate",
+      "descripcion": "Mezcla de atún con mayonesa ligera, aguacate, espinacas y un toque de limón, en pan multicereal.",
+      "ingredientes": [
+        "Atún",
+        "Mayonesa ligera",
+        "Aguacate",
+        "Espinacas",
+        "Limón",
+        "Pan multicereal"
+      ],
+      "precio": 4.8,
+      "sabor": "Suave y fresco",
+      "image": "27"
+    }
+  ],
+
+  "postres": [
+    {
+      "id": 28,
+      "nombre": "Brownie de Chocolate con Dátiles",
+      "descripcion": "Hecho con cacao puro, dátiles para endulzar, harina de almendra y un toque de vainilla. Este brownie es denso y húmedo, sin necesidad de azúcares añadidos.",
+      "ingredientes": [
+        "Cacao puro",
+        "Dátiles",
+        "Harina de almendra",
+        "Vainilla"
+      ],
+      "precio": 3.8,
+      "sabor": "Denso y rico",
+      "image": "28"
+    },
+    {
+      "id": 29,
+      "nombre": "Mousse de Aguacate y Cacao",
+      "descripcion": "Un mousse cremoso elaborado con aguacate, cacao puro y endulzado naturalmente con stevia o un toque de miel. Una opción rica y saludable.",
+      "ingredientes": ["Aguacate", "Cacao puro", "Stevia", "Miel"],
+      "precio": 4.0,
+      "sabor": "Cremoso y saludable",
+      "image": "29"
+    },
+    {
+      "id": 30,
+      "nombre": "Pastel de Zanahoria con Harina de Coco",
+      "descripcion": "Un pastel húmedo hecho con harina de coco, zanahoria rallada, canela y endulzado con puré de manzana. Perfecto para quienes buscan algo saludable y sin gluten.",
+      "ingredientes": [
+        "Harina de coco",
+        "Zanahoria rallada",
+        "Canela",
+        "Puré de manzana"
+      ],
+      "precio": 4.5,
+      "sabor": "Húmedo y especiado",
+      "image": "30"
+    },
+    {
+      "id": 31,
+      "nombre": "Galletas de Almendra y Coco",
+      "descripcion": "Galletas crujientes hechas con harina de almendra, coco rallado, y endulzadas con miel o stevia. Tienen un sabor delicioso y una textura ligera.",
+      "ingredientes": ["Harina de almendra", "Coco rallado", "Miel", "Stevia"],
+      "precio": 2.5,
+      "sabor": "Crujiente y ligera",
+      "image": "31"
+    },
+    {
+      "id": 32,
+      "nombre": "Cheesecake de Frutos Rojos (Sin Base)",
+      "descripcion": "Un cheesecake sin base, hecho con queso crema, yogur griego y endulzado con frutos rojos frescos y stevia. Al eliminar la base, se evita el gluten y se conserva el sabor.",
+      "ingredientes": ["Queso crema", "Yogur griego", "Frutos rojos", "Stevia"],
+      "precio": 4.8,
+      "sabor": "Suave y afrutado",
+      "image": "32"
+    },
+    {
+      "id": 33,
+      "nombre": "Crumble de Manzana",
+      "descripcion": "Manzanas horneadas cubiertas con una capa crujiente de avena y almendras, endulzadas naturalmente con un toque de canela. Una opción deliciosa sin azúcares añadidos.",
+      "ingredientes": ["Manzana", "Avena", "Almendras", "Canela"],
+      "precio": 4.0,
+      "sabor": "Dulce y crujiente",
+      "image": "33"
+    }    
   ]
 }

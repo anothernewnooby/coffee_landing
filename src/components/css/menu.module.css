@@ -83,7 +83,7 @@
     height: 10px;
     z-index: -1;
     transform-origin: top left;
-    animation: sectionLoad 1s ease-in-out forwards;
+    animation: sectionLoad 0.5s ease-in-out forwards;
 }
 
 /* Animación de carga de la sección */
@@ -202,10 +202,18 @@
 }
 
 /* Estilos para pantallas grandes (mínimo 1439px) */
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 1440px) {
     .carta {
-        width: 30rem;
-        height: 30rem;
+        width: 20rem;
+        height: 20rem;
+        
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .carta {
+        width: 40rem;
+        height: 40rem;
         
     }
 }
