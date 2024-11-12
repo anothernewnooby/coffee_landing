@@ -25,6 +25,8 @@
     font-family: var(--fontPrimary);
     font-size: 4rem;
     color: var(--secondary);
+    user-select: none; /* Evita la selección de texto */
+    -webkit-user-select: none; /* Compatibilidad con Safari */
 }
 
 .navlist {
