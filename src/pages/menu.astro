@@ -1,6 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import menu from "../components/css/menu.module.css";
+import CartaMenu from "../components/CartaMenu.astro";
+
+
+const menuItem = {
+  id: 1,
+  nombre: "Café Espresso",
+  ingredientes: "Café Molido",
+  precio: 1.5,
+  sabor: "Intenso y fuerte",
+  descripcion: "Un concentrado de café puro, servido en una pequeña porción, con un sabor robusto y lleno de cafeína.",
+  image: 1
+};
 ---
 
 <Layout title="Menu">
@@ -23,15 +35,33 @@ import menu from "../components/css/menu.module.css";
     </section>
 
     <section class={menu.cartasContenedor}>
-        <div class={menu.carta}>1</div>
-        <div class={menu.carta}>2</div>
-        <div class={menu.carta}>3</div>
-        <div class={menu.carta}>4</div>
-        <div class={menu.carta}>5</div>
-        <div class={menu.carta}>6</div>
-        <div class={menu.carta}>7</div>
-        <div class={menu.carta}>8</div>
-        <div class={menu.carta}>9</div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
+        <div class={menu.carta}>
+          <CartaMenu {...menuItem} />
+        </div>
     </section>
   </section>
 </Layout>

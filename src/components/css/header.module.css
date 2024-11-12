@@ -2,6 +2,7 @@
 .header {
     background-color: var(--terciario);
     height: 7rem;
+    padding-top: 0.5rem;
 }
 
 .header > div {

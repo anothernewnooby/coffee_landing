@@ -1,0 +1,29 @@
+---
+
+interface Props{
+    id: number;
+    nombre: string;
+    ingredientes: string;
+    precio: number;
+    sabor: string;
+    descripcion: string;
+    image: number;
+}
+
+import carta from "../components/css/carta.module.css";
+
+const { id, nombre, ingredientes, precio, sabor, descripcion, image } = Astro.props as Props;
+---
+<section class={carta.contenedor} data-id={id}>
+    <div class={carta.contImagen}>
+        <img src={`/menu/${image}.jpg`} alt={nombre} class={carta.image} />
+    </div>
+    <div class={carta.contTexto}>
+        <h3 class={carta.nombre}>{nombre}</h3>
+        <p class={carta.sabor}>{sabor}</p>
+        <div class={carta.contPrecio}>
+            <p class={carta.precio}><span>$</span>{precio}</p>
+            <svg class={carta.svg} xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(255, 139, 68, 1);transform: ;msFilter:;"><path d="M20 2H8c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM8 16V4h12l.002 12H8z"></path><path d="M4 8H2v12c0 1.103.897 2 2 2h12v-2H4V8zm11-2h-2v3h-3v2h3v3h2v-3h3V9h-3z"></path></svg>
+        </div>
+    </div>
+</section>
