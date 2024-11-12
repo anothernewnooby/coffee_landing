@@ -84,7 +84,7 @@ span{
 @media screen and (max-width: 768px){
     .contenedor{
         width: 100%;
-        max-width: 18rem;
+        max-width: 25rem;
         height: auto;
     }
 }

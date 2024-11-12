@@ -47,6 +47,8 @@
     font-weight: 300;
     padding: 0.25rem;
     margin-bottom: 3rem;
+    user-select: none; /* Evita la selección de texto */
+    -webkit-user-select: none; /* Compatibilidad con Safari */
 }
 
 /* Efecto hover en los elementos de lista */
